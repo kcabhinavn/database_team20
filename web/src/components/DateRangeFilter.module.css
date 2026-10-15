@@ -1,0 +1,35 @@
+.range {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--rs-space-2);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.date input {
+  height: var(--rs-control-height);
+  padding: 0 var(--rs-space-2);
+  border: 1px solid var(--rs-color-border-strong);
+  border-radius: var(--rs-radius-sm);
+  background: var(--rs-color-surface);
+}
+
+@media (max-width: 767px) {
+  .date {
+    flex: 1 1 130px;
+  }
+
+  .date input {
+    width: 100%;
+    height: var(--rs-touch-target);
+  }
+}

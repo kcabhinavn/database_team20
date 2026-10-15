@@ -1,0 +1,141 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rs-space-5);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rs-space-3);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--rs-space-3);
+}
+
+.sectionTitle {
+  font-size: var(--rs-text-lg);
+  font-weight: 700;
+}
+
+.sectionSub {
+  font-size: var(--rs-text-xs);
+  color: var(--rs-color-text-muted);
+}
+
+.refresh {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--rs-space-3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(320px, 2fr);
+  gap: var(--rs-space-4);
+  align-items: start;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--rs-space-3);
+}
+
+.vehiclePicker {
+  flex: 1 1 220px;
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--rs-text-sm);
+  cursor: pointer;
+}
+
+.checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--rs-color-primary);
+}
+
+.chartFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rs-space-3);
+  flex-wrap: wrap;
+}
+
+.trendStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--rs-space-3);
+  margin: 0;
+  padding-top: var(--rs-space-3);
+  border-top: 1px solid var(--rs-color-border);
+}
+
+.trendStats dt {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--rs-color-text-muted);
+}
+
+.trendStats dd {
+  margin: 4px 0 0;
+  font-size: var(--rs-text-lg);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.tableScroll {
+  max-height: 320px;
+  overflow: auto;
+  border: 1px solid var(--rs-color-border);
+  border-radius: var(--rs-radius-md);
+}
+
+.miniTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--rs-text-sm);
+}
+
+.miniTable th {
+  position: sticky;
+  top: 0;
+  padding: 8px 12px;
+  background: var(--rs-color-surface-muted);
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--rs-color-text-muted);
+}
+
+.miniTable td {
+  padding: 6px 12px;
+  border-top: 1px solid var(--rs-color-border);
+}
+
+/* Side by side only when there is room for the ranking's four columns. */
+@media (max-width: 1279px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

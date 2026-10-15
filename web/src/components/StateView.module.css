@@ -1,0 +1,48 @@
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: var(--rs-space-2) 0;
+}
+
+.bar {
+  height: 14px;
+  border-radius: var(--rs-radius-pill);
+  background: linear-gradient(90deg, var(--rs-color-surface-muted), var(--rs-color-border), var(--rs-color-surface-muted));
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--rs-space-2);
+  padding: var(--rs-space-6) var(--rs-space-4);
+  text-align: center;
+}
+
+.emptyIcon {
+  width: 56px;
+  height: 42px;
+  color: var(--rs-color-text-faint);
+}
+
+.emptyTitle {
+  font-weight: 700;
+}
+
+.emptyText {
+  max-width: 420px;
+  font-size: var(--rs-text-sm);
+  color: var(--rs-color-text-muted);
+}

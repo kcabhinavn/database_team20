@@ -1,0 +1,120 @@
+/* Layout helpers shared by the feature pages. */
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rs-space-5);
+}
+
+.toolbar {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: var(--rs-space-3);
+}
+
+.toolbar > * {
+  min-width: 0;
+}
+
+.grow {
+  flex: 1 1 260px;
+}
+
+.fixed {
+  flex: 0 1 200px;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: var(--rs-space-4);
+  align-items: start;
+}
+
+.threeCol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--rs-space-4);
+  align-items: stretch;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rs-space-4);
+  min-width: 0;
+}
+
+/* An aria-live region that exists before results arrive; while empty it
+   should not add a second flex gap. */
+.liveRegion {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rs-space-4);
+}
+
+.liveRegion:empty {
+  margin-top: calc(-1 * var(--rs-space-5));
+}
+
+.meta {
+  font-size: var(--rs-text-xs);
+  color: var(--rs-color-text-muted);
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--rs-space-2) var(--rs-space-3);
+}
+
+.defs {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px var(--rs-space-4);
+  margin: 0;
+}
+
+.defs dt {
+  color: var(--rs-color-text-muted);
+  font-size: var(--rs-text-sm);
+}
+
+.defs dd {
+  margin: 0;
+  font-weight: 600;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.mono {
+  font-family: var(--rs-font-mono);
+  font-size: var(--rs-text-xs);
+  color: var(--rs-color-text-muted);
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.linkButton {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--rs-color-primary);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 1023px) {
+  .twoCol,
+  .threeCol {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,144 @@
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  gap: var(--rs-space-4);
+  min-height: 60px;
+  padding: var(--rs-space-2) var(--rs-space-5);
+  background: var(--rs-color-surface);
+  border-bottom: 1px solid var(--rs-color-border);
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: none;
+  width: var(--rs-touch-target);
+  height: var(--rs-touch-target);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.menu span,
+.menu span::before,
+.menu span::after {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--rs-color-text);
+  border-radius: 1px;
+  position: relative;
+}
+
+.menu span::before,
+.menu span::after {
+  content: '';
+  position: absolute;
+}
+
+.menu span::before {
+  top: -6px;
+}
+
+.menu span::after {
+  top: 6px;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  gap: var(--rs-space-2);
+  min-width: 0;
+}
+
+.title h1 {
+  font-size: var(--rs-text-xl);
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.crumb {
+  color: var(--rs-color-text-muted);
+  font-size: var(--rs-text-lg);
+  text-decoration: none;
+}
+
+.crumb:hover {
+  text-decoration: underline;
+}
+
+.slash {
+  color: var(--rs-color-text-faint);
+}
+
+.actor {
+  display: flex;
+  align-items: center;
+  gap: var(--rs-space-4);
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.viewAs {
+  display: flex;
+  align-items: center;
+  gap: var(--rs-space-2);
+}
+
+.viewAsLabel {
+  font-size: var(--rs-text-xs);
+  font-weight: 600;
+  color: var(--rs-color-text-muted);
+}
+
+.picker {
+  width: 300px;
+}
+
+.opsChip {
+  display: flex;
+  align-items: center;
+  min-height: var(--rs-control-height);
+  padding: 0 var(--rs-space-3);
+  border: 1px solid var(--rs-color-border);
+  border-radius: var(--rs-radius-pill);
+  font-weight: 600;
+  font-size: var(--rs-text-sm);
+}
+
+@media (max-width: 1023px) {
+  .picker {
+    width: 240px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bar {
+    padding: var(--rs-space-2) var(--rs-space-3);
+    gap: var(--rs-space-2);
+  }
+
+  .menu {
+    display: inline-grid;
+    place-items: center;
+  }
+
+  .actor {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .picker {
+    flex: 1 1 220px; /* wraps onto its own row when there is no room */
+    width: auto;
+    min-width: 0;
+  }
+
+  .viewAsLabel {
+    display: none;
+  }
+}

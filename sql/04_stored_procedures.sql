@@ -9,11 +9,25 @@ LANGUAGE plpgsql
 AS $$
 DECLARE
     v_vehicle_active BOOLEAN;
+    v_constraint     TEXT;
 BEGIN
+    -- Transaction control: callers must use autocommit (no surrounding BEGIN),
+    -- otherwise this COMMIT raises "invalid transaction termination".
     COMMIT;
     SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 
     BEGIN
+        -- [A2 fix] Procedure parameters ignore DECIMAL(10,2), so 10.005 used to
+        -- debit 10.00 from the wallet but store a 10.01 fare. Round once here.
+        p_fare_amount := ROUND(p_fare_amount, 2);
+
+        -- [A2 fix] A negative fare used to surface as "insufficient wallet
+        -- balance"; a zero fare committed without any wallet_audit_logs row.
+        IF p_fare_amount IS NULL OR p_fare_amount <= 0 THEN
+            RAISE EXCEPTION 'fare must be greater than 0.00'
+                USING ERRCODE = 'invalid_parameter_value';
+        END IF;
+
         SELECT is_active INTO v_vehicle_active
           FROM vehicles WHERE id = p_vehicle_id FOR SHARE;
 
@@ -44,7 +58,16 @@ BEGIN
 
     EXCEPTION
         WHEN check_violation THEN
-            p_status := 'ROLLED_BACK: insufficient wallet balance';
+            -- [A2 fix] Only the wallet CHECK means "insufficient balance".
+            GET STACKED DIAGNOSTICS v_constraint = CONSTRAINT_NAME;
+            IF v_constraint = 'riders_wallet_balance_nonnegative' THEN
+                p_status := 'ROLLED_BACK: insufficient wallet balance';
+            ELSE
+                p_status := 'ROLLED_BACK: ' || SQLERRM;
+            END IF;
+            p_trip_id := NULL;
+        WHEN invalid_parameter_value THEN
+            p_status := 'ROLLED_BACK: ' || SQLERRM;
             p_trip_id := NULL;
         WHEN unique_violation THEN
             p_status := 'ROLLED_BACK: rider already has an active trip';

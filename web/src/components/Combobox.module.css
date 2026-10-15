@@ -1,0 +1,136 @@
+.combo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.label {
+  font-size: var(--rs-text-xs);
+  font-weight: 600;
+  color: var(--rs-color-text-muted);
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: var(--rs-space-2);
+  min-height: var(--rs-control-height);
+  padding: 0 var(--rs-space-3);
+  background: var(--rs-color-surface);
+  border: 1px solid var(--rs-color-border-strong);
+  border-radius: var(--rs-radius-sm);
+}
+
+.control:focus-within {
+  border-color: var(--rs-color-primary);
+  box-shadow: 0 0 0 1px var(--rs-color-primary);
+}
+
+.invalid {
+  border-color: var(--rs-color-danger);
+}
+
+.searchIcon {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  color: var(--rs-color-text-muted);
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  height: calc(var(--rs-control-height) - 2px);
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.input::placeholder {
+  color: var(--rs-color-text-placeholder);
+}
+
+.input:focus-visible {
+  box-shadow: none;
+}
+
+.meta {
+  flex: none;
+  font-size: var(--rs-text-sm);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.caret {
+  flex: none;
+  color: var(--rs-color-text-muted);
+  font-size: 12px;
+}
+
+.list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin: 4px 0 0;
+  padding: 4px;
+  max-height: 280px;
+  overflow-y: auto;
+  list-style: none;
+  background: var(--rs-color-surface);
+  border: 1px solid var(--rs-color-border);
+  border-radius: var(--rs-radius-md);
+  box-shadow: var(--rs-shadow-overlay);
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--rs-space-3);
+  padding: 8px 10px;
+  border-radius: var(--rs-radius-sm);
+  cursor: pointer;
+}
+
+.active {
+  background: var(--rs-color-primary-soft);
+}
+
+.disabled {
+  color: var(--rs-color-text-faint);
+  cursor: not-allowed;
+}
+
+.optionMeta {
+  color: var(--rs-color-text-muted);
+  font-size: var(--rs-text-sm);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.note {
+  padding: 8px 10px;
+  color: var(--rs-color-text-muted);
+  font-size: var(--rs-text-sm);
+}
+
+.helper {
+  font-size: var(--rs-text-xs);
+  color: var(--rs-color-text-muted);
+}
+
+.error {
+  font-size: var(--rs-text-xs);
+  font-weight: 600;
+  color: var(--rs-color-danger);
+}
+
+@media (max-width: 767px) {
+  .control,
+  .input {
+    min-height: var(--rs-touch-target);
+  }
+}

@@ -1,0 +1,11 @@
+.controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--rs-space-3);
+}
+
+.note {
+  font-size: var(--rs-text-xs);
+  color: var(--rs-color-text-muted);
+}

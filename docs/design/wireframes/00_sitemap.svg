@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="940" viewBox="0 0 1640 940" font-family="Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#F8F9FA"/>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#495057"/></marker></defs>
+<text x="24.0" y="40.0" font-size="22" fill="#212529" font-weight="800" text-anchor="start">W00  Users, screens and flows</text>
+<text x="24.0" y="64.0" font-size="13" fill="#6C757D" font-weight="400" text-anchor="start">Two user types share one app. &#x27;View as&#x27; switches between them (no login). Arrows are the main journeys used in the demo.</text>
+<text x="1616.0" y="40.0" font-size="12" fill="#ADB5BD" font-weight="400" text-anchor="end">RideSync · Team 20 · low-fidelity wireframe</text>
+<rect x="24.0" y="96.0" width="380.0" height="330.0" rx="10" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<circle cx="60.0" cy="136.0" r="22" fill="#DEE2E6" stroke="none" stroke-width="1"/>
+<text x="60.0" y="142.0" font-size="16" fill="#212529" font-weight="800" text-anchor="middle">R</text>
+<text x="96.0" y="132.0" font-size="16" fill="#212529" font-weight="800" text-anchor="start">Rider · Heather</text>
+<text x="96.0" y="152.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">Daily commuter · phone first · in a hurry</text>
+<text x="44.0" y="192.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Find an available vehicle nearby</text>
+<text x="44.0" y="216.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Book a trip and see what it cost</text>
+<text x="44.0" y="240.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Understand a failed booking</text>
+<text x="44.0" y="264.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Follow her active trip</text>
+<text x="44.0" y="288.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Check her wallet history</text>
+<text x="44.0" y="312.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Read reviews of a vehicle</text>
+<rect x="24.0" y="456.0" width="380.0" height="420.0" rx="10" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<circle cx="60.0" cy="496.0" r="22" fill="#DEE2E6" stroke="none" stroke-width="1"/>
+<text x="60.0" y="502.0" font-size="16" fill="#212529" font-weight="800" text-anchor="middle">O</text>
+<text x="96.0" y="492.0" font-size="16" fill="#212529" font-weight="800" text-anchor="start">Ops manager · Arjun</text>
+<text x="96.0" y="512.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">Fleet operations lead · laptop · data-heavy</text>
+<text x="44.0" y="552.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Browse 50,000 trips quickly</text>
+<text x="44.0" y="576.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Revenue trend and ranking per vehicle</text>
+<text x="44.0" y="600.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Fleet totals with a freshness time</text>
+<text x="44.0" y="624.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Live availability around a hotspot</text>
+<text x="44.0" y="648.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Rating spread and feedback tags</text>
+<text x="44.0" y="672.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Vehicle catalog and inspections</text>
+<text x="44.0" y="696.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Resolve wallet disputes</text>
+<text x="44.0" y="720.0" font-size="13" fill="#495057" font-weight="400" text-anchor="start">•  Move a stuck trip forward</text>
+<rect x="436.0" y="96.0" width="1180.0" height="330.0" rx="12" fill="#F1F3F5" stroke="none" stroke-width="1"/>
+<text x="456.0" y="122.0" font-size="12" fill="#6C757D" font-weight="800" text-anchor="start" letter-spacing="1">RIDER MODE</text>
+<rect x="436.0" y="456.0" width="1180.0" height="420.0" rx="12" fill="#F1F3F5" stroke="none" stroke-width="1"/>
+<text x="456.0" y="482.0" font-size="12" fill="#6C757D" font-weight="800" text-anchor="start" letter-spacing="1">OPS MANAGER MODE</text>
+<rect x="470.0" y="140.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#343A40" stroke-width="1.5"/>
+<text x="484.0" y="166.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Find a vehicle</text>
+<text x="688.0" y="166.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W07</text>
+<text x="484.0" y="187.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/map</text>
+<text x="484.0" y="210.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">W3 · $geoNear 5 km + polling</text>
+<rect x="760.0" y="140.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#343A40" stroke-width="1.5"/>
+<text x="774.0" y="166.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Book a trip</text>
+<text x="978.0" y="166.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W03-04</text>
+<text x="774.0" y="187.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/book</text>
+<text x="774.0" y="210.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">W1 · CALL sp_atomic_booking</text>
+<rect x="1050.0" y="140.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#868E96" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="1064.0" y="166.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">My wallet</text>
+<text x="1268.0" y="166.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W05</text>
+<text x="1064.0" y="187.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/wallet (self)</text>
+<text x="1064.0" y="210.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">wallet_audit_logs, read-only</text>
+<rect x="1340.0" y="140.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#868E96" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="1354.0" y="166.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Reviews</text>
+<text x="1558.0" y="166.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W08</text>
+<text x="1354.0" y="187.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/reviews</text>
+<text x="1354.0" y="210.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">W4 · $facet + VehicleMetadata</text>
+<rect x="760.0" y="316.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#868E96" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="774.0" y="342.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">My trips</text>
+<text x="978.0" y="342.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W01</text>
+<text x="774.0" y="363.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/trips (self)</text>
+<text x="774.0" y="386.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">trips + status stepper</text>
+<path d="M700,183 L760,183" fill="none" stroke="#495057" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<rect x="667.9" y="119.0" width="124.2" height="18.0" rx="4" fill="#F8F9FA" stroke="none" stroke-width="1"/>
+<text x="730.0" y="132.0" font-size="11" fill="#495057" font-weight="600" text-anchor="middle">Book this vehicle</text>
+<path d="M990,183 L1050,183" fill="none" stroke="#495057" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<rect x="954.6" y="119.0" width="130.8" height="18.0" rx="4" fill="#F8F9FA" stroke="none" stroke-width="1"/>
+<text x="1020.0" y="132.0" font-size="11" fill="#495057" font-weight="600" text-anchor="middle">success: see debit</text>
+<path d="M840,226 L840,316" fill="none" stroke="#495057" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<rect x="692.0" y="263.0" width="144.0" height="18.0" rx="4" fill="#F8F9FA" stroke="none" stroke-width="1"/>
+<text x="764.0" y="276.0" font-size="11" fill="#495057" font-weight="600" text-anchor="middle">blocked: active trip</text>
+<path d="M910,316 L910,226" fill="none" stroke="#495057" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<rect x="910.7" y="263.0" width="150.6" height="18.0" rx="4" fill="#F8F9FA" stroke="none" stroke-width="1"/>
+<text x="986.0" y="276.0" font-size="11" fill="#495057" font-weight="600" text-anchor="middle">completed: book again</text>
+<rect x="470.0" y="500.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#343A40" stroke-width="1.5"/>
+<text x="484.0" y="526.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Overview</text>
+<text x="688.0" y="526.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W06</text>
+<text x="484.0" y="547.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/analytics</text>
+<text x="484.0" y="570.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">W2 window query + MV</text>
+<rect x="760.0" y="500.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#343A40" stroke-width="1.5"/>
+<text x="774.0" y="526.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Vehicle detail</text>
+<text x="978.0" y="526.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W02</text>
+<text x="774.0" y="547.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/vehicles/:id</text>
+<text x="774.0" y="570.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">PG stats + VehicleMetadata</text>
+<rect x="1050.0" y="500.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#868E96" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="1064.0" y="526.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Reviews</text>
+<text x="1268.0" y="526.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W08</text>
+<text x="1064.0" y="547.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/reviews</text>
+<text x="1064.0" y="570.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">W4 · $facet</text>
+<rect x="1340.0" y="500.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#868E96" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="1354.0" y="526.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Live map</text>
+<text x="1558.0" y="526.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W07</text>
+<text x="1354.0" y="547.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/map</text>
+<text x="1354.0" y="570.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">W3 · $geoNear + polling</text>
+<rect x="470.0" y="640.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#343A40" stroke-width="1.5"/>
+<text x="484.0" y="666.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Vehicles</text>
+<text x="688.0" y="666.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W01</text>
+<text x="484.0" y="687.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/vehicles</text>
+<text x="484.0" y="710.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">vehicle_lifetime_stats</text>
+<rect x="760.0" y="640.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#868E96" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="774.0" y="666.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Trips</text>
+<text x="978.0" y="666.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W01</text>
+<text x="774.0" y="687.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/trips</text>
+<text x="774.0" y="710.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">trips, paged + filtered</text>
+<rect x="1050.0" y="640.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#343A40" stroke-width="1.5"/>
+<text x="1064.0" y="666.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Trip detail</text>
+<text x="1268.0" y="666.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W01</text>
+<text x="1064.0" y="687.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/trips/:id</text>
+<text x="1064.0" y="710.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">status stepper (PATCH)</text>
+<rect x="470.0" y="776.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#343A40" stroke-width="1.5"/>
+<text x="484.0" y="802.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Riders</text>
+<text x="688.0" y="802.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W01</text>
+<text x="484.0" y="823.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/riders</text>
+<text x="484.0" y="846.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">riders, paged + search</text>
+<rect x="760.0" y="776.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#343A40" stroke-width="1.5"/>
+<text x="774.0" y="802.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Rider detail</text>
+<text x="978.0" y="802.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W01</text>
+<text x="774.0" y="823.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/riders/:id</text>
+<text x="774.0" y="846.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">riders + trips</text>
+<rect x="1050.0" y="776.0" width="230.0" height="86.0" rx="10" fill="#FFFFFF" stroke="#868E96" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="1064.0" y="802.0" font-size="15" fill="#212529" font-weight="800" text-anchor="start">Wallet audit</text>
+<text x="1268.0" y="802.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end">W05</text>
+<text x="1064.0" y="823.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">/wallet?rider=</text>
+<text x="1064.0" y="846.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">wallet_audit_logs, read-only</text>
+<path d="M700,543 L760,543" fill="none" stroke="#495057" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<rect x="677.8" y="479.0" width="104.4" height="18.0" rx="4" fill="#F8F9FA" stroke="none" stroke-width="1"/>
+<text x="730.0" y="492.0" font-size="11" fill="#495057" font-weight="600" text-anchor="middle">click rank row</text>
+<path d="M990,543 L1050,543" fill="none" stroke="#495057" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<rect x="964.5" y="479.0" width="111.0" height="18.0" rx="4" fill="#F8F9FA" stroke="none" stroke-width="1"/>
+<text x="1020.0" y="492.0" font-size="11" fill="#495057" font-weight="600" text-anchor="middle">open in Reviews</text>
+<path d="M700,670 L800,586" fill="none" stroke="#495057" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<rect x="668.3" y="601.0" width="71.4" height="18.0" rx="4" fill="#F8F9FA" stroke="none" stroke-width="1"/>
+<text x="704.0" y="614.0" font-size="11" fill="#495057" font-weight="600" text-anchor="middle">row click</text>
+<path d="M990,683 L1050,683" fill="none" stroke="#495057" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<rect x="984.3" y="619.0" width="71.4" height="18.0" rx="4" fill="#F8F9FA" stroke="none" stroke-width="1"/>
+<text x="1020.0" y="632.0" font-size="11" fill="#495057" font-weight="600" text-anchor="middle">row click</text>
+<path d="M700,819 L760,819" fill="none" stroke="#495057" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<rect x="694.3" y="755.0" width="71.4" height="18.0" rx="4" fill="#F8F9FA" stroke="none" stroke-width="1"/>
+<text x="730.0" y="768.0" font-size="11" fill="#495057" font-weight="600" text-anchor="middle">row click</text>
+<path d="M990,819 L1050,819" fill="none" stroke="#495057" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<rect x="977.7" y="755.0" width="84.6" height="18.0" rx="4" fill="#F8F9FA" stroke="none" stroke-width="1"/>
+<text x="1020.0" y="768.0" font-size="11" fill="#495057" font-weight="600" text-anchor="middle">view wallet</text>
+<rect x="1340.0" y="650.0" width="230.0" height="40.0" rx="8" fill="#FFFFFF" stroke="#343A40" stroke-width="1.5"/>
+<text x="1354.0" y="675.0" font-size="12" fill="#212529" font-weight="600" text-anchor="start">Screen for one user type</text>
+<rect x="1340.0" y="702.0" width="230.0" height="40.0" rx="8" fill="#FFFFFF" stroke="#868E96" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="1354.0" y="727.0" font-size="12" fill="#212529" font-weight="600" text-anchor="start">Shared screen, scoped by role</text>
+<text x="1340.0" y="772.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-style="italic">W-codes refer to the wireframe files.</text>
+</svg>

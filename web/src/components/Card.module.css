@@ -1,0 +1,85 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rs-space-4);
+  min-width: 0;
+  padding: var(--rs-space-4);
+  background: var(--rs-color-surface);
+  border: 1px solid var(--rs-color-border);
+  border-radius: var(--rs-radius-md);
+  box-shadow: var(--rs-shadow-card);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--rs-space-3);
+  flex-wrap: wrap;
+}
+
+.headings {
+  min-width: 0;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 2px;
+  font-size: var(--rs-text-xs);
+  color: var(--rs-color-text-muted);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--rs-space-2);
+  flex-wrap: wrap;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: var(--rs-space-4);
+}
+
+.stat {
+  padding: var(--rs-space-4);
+  background: var(--rs-color-surface);
+  border: 1px solid var(--rs-color-border);
+  border-radius: var(--rs-radius-md);
+  box-shadow: var(--rs-shadow-card);
+  min-width: 0;
+}
+
+.statLabel {
+  font-size: var(--rs-text-xs);
+  font-weight: 600;
+  color: var(--rs-color-text-muted);
+}
+
+.statValue {
+  margin-top: 6px;
+  font-size: var(--rs-text-2xl);
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.statSub {
+  margin-top: 4px;
+  font-size: var(--rs-text-xs);
+  color: var(--rs-color-text-muted);
+}
+
+.statSkeleton {
+  display: block;
+  margin-top: 10px;
+  width: 60%;
+  height: 22px;
+  border-radius: var(--rs-radius-sm);
+  background: var(--rs-color-surface-muted);
+}

@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="984" viewBox="0 0 1640 984" font-family="Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#F8F9FA"/>
+<text x="24.0" y="40.0" font-size="22" fill="#212529" font-weight="800" text-anchor="start">W02  Browse · Vehicle detail (Ops manager)</text>
+<text x="24.0" y="64.0" font-size="13" fill="#6C757D" font-weight="400" text-anchor="start">Detail view for one record. Postgres (stats) and MongoDB (catalog, reviews) side by side.</text>
+<text x="1616.0" y="40.0" font-size="12" fill="#ADB5BD" font-weight="400" text-anchor="end">RideSync · Team 20 · low-fidelity wireframe</text>
+<rect x="24.0" y="84.0" width="1240.0" height="872.0" rx="10" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<rect x="24.5" y="84.5" width="1239.0" height="32.0" rx="10" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<rect x="24.5" y="100.0" width="1239.0" height="16.0" rx="0" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<line x1="24.0" y1="116.0" x2="1264.0" y2="116.0" stroke="#CED4DA" stroke-width="1" stroke-linecap="round"/>
+<circle cx="42.0" cy="100.0" r="5" fill="#868E96" stroke="none" stroke-width="1"/>
+<circle cx="58.0" cy="100.0" r="5" fill="#868E96" stroke="none" stroke-width="1"/>
+<circle cx="74.0" cy="100.0" r="5" fill="#868E96" stroke="none" stroke-width="1"/>
+<rect x="104.0" y="90.0" width="460.0" height="20.0" rx="10" fill="#FFFFFF" stroke="#CED4DA" stroke-width="1"/>
+<text x="118.0" y="104.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">localhost/vehicles/3f2a9c1e</text>
+<g transform="translate(24,116)">
+<rect x="0.5" y="0.0" width="216.0" height="839.5" rx="0" fill="#F1F3F5" stroke="none" stroke-width="1"/>
+<line x1="216.0" y1="0.0" x2="216.0" y2="840.0" stroke="#CED4DA" stroke-width="1" stroke-linecap="round"/>
+<rect x="20.0" y="17.0" width="26.0" height="26.0" rx="7" fill="#343A40" stroke="none" stroke-width="1"/>
+<text x="33.0" y="35.0" font-size="14" fill="#FFFFFF" font-weight="800" text-anchor="middle">R</text>
+<text x="56.0" y="36.0" font-size="18" fill="#212529" font-weight="800" text-anchor="start">RideSync</text>
+<text x="20.0" y="84.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.8">OPERATIONS</text>
+<rect x="26.0" y="108.0" width="12.0" height="12.0" rx="3" fill="none" stroke="#6C757D" stroke-width="1.5"/>
+<text x="50.0" y="119.0" font-size="14" fill="#212529" font-weight="500" text-anchor="start">Overview</text>
+<rect x="26.0" y="148.0" width="12.0" height="12.0" rx="3" fill="none" stroke="#6C757D" stroke-width="1.5"/>
+<text x="50.0" y="159.0" font-size="14" fill="#212529" font-weight="500" text-anchor="start">Riders</text>
+<rect x="12.0" y="176.0" width="192.0" height="36.0" rx="6" fill="#DEE2E6" stroke="none" stroke-width="1"/>
+<rect x="26.0" y="188.0" width="12.0" height="12.0" rx="3" fill="none" stroke="#212529" stroke-width="1.5"/>
+<text x="50.0" y="199.0" font-size="14" fill="#212529" font-weight="700" text-anchor="start">Vehicles</text>
+<rect x="26.0" y="228.0" width="12.0" height="12.0" rx="3" fill="none" stroke="#6C757D" stroke-width="1.5"/>
+<text x="50.0" y="239.0" font-size="14" fill="#212529" font-weight="500" text-anchor="start">Trips</text>
+<rect x="26.0" y="268.0" width="12.0" height="12.0" rx="3" fill="none" stroke="#6C757D" stroke-width="1.5"/>
+<text x="50.0" y="279.0" font-size="14" fill="#212529" font-weight="500" text-anchor="start">Live map</text>
+<rect x="26.0" y="308.0" width="12.0" height="12.0" rx="3" fill="none" stroke="#6C757D" stroke-width="1.5"/>
+<text x="50.0" y="319.0" font-size="14" fill="#212529" font-weight="500" text-anchor="start">Reviews</text>
+<rect x="26.0" y="348.0" width="12.0" height="12.0" rx="3" fill="none" stroke="#6C757D" stroke-width="1.5"/>
+<text x="50.0" y="359.0" font-size="14" fill="#212529" font-weight="500" text-anchor="start">Wallet audit</text>
+<line x1="0.0" y1="766.0" x2="216.0" y2="766.0" stroke="#CED4DA" stroke-width="1" stroke-linecap="round"/>
+<text x="20.0" y="790.0" font-size="10" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.8">DATA SOURCES</text>
+<circle cx="25.0" cy="812.0" r="4" fill="#343A40" stroke="none" stroke-width="1"/>
+<text x="35.0" y="816.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">Postgres</text>
+<circle cx="112.0" cy="812.0" r="4" fill="#343A40" stroke="none" stroke-width="1"/>
+<text x="122.0" y="816.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">MongoDB</text>
+<line x1="216.0" y1="56.0" x2="1240.0" y2="56.0" stroke="#CED4DA" stroke-width="1" stroke-linecap="round"/>
+<text x="240.0" y="35.0" font-size="16" fill="#6C757D" font-weight="500" text-anchor="start">Vehicles</text>
+<text x="318.7" y="35.0" font-size="16" fill="#ADB5BD" font-weight="400" text-anchor="start">/</text>
+<text x="334.7" y="35.0" font-size="20" fill="#212529" font-weight="700" text-anchor="start">RS00409</text>
+<text x="690.0" y="33.0" font-size="12" fill="#6C757D" font-weight="600" text-anchor="start">View as</text>
+<rect x="744.0" y="13.0" width="163.2" height="30.0" rx="6" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<text x="774.0" y="32.3" font-size="12" fill="#212529" font-weight="600" text-anchor="middle">Rider</text>
+<rect x="806.0" y="15.0" width="99.2" height="26.0" rx="4" fill="#343A40" stroke="none" stroke-width="1"/>
+<text x="855.6" y="32.3" font-size="12" fill="#FFFFFF" font-weight="600" text-anchor="middle">Ops manager</text>
+<rect x="960.0" y="12.0" width="256.0" height="32.0" rx="16" fill="#FFFFFF" stroke="#CED4DA" stroke-width="1"/>
+<circle cx="977.0" cy="28.0" r="12" fill="#DEE2E6" stroke="none" stroke-width="1"/>
+<text x="977.0" y="32.0" font-size="10" fill="#212529" font-weight="700" text-anchor="middle">OM</text>
+<text x="996.0" y="32.0" font-size="13" fill="#212529" font-weight="600" text-anchor="start">Ops manager (demo)</text>
+<rect x="240.0" y="82.0" width="47.9" height="20.0" rx="10.0" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<text x="264.0" y="96.0" font-size="11" fill="#212529" font-weight="700" text-anchor="middle" letter-spacing="0.3">POOL</text>
+<rect x="295.9" y="82.0" width="62.9" height="20.0" rx="10.0" fill="#DEE2E6" stroke="#DEE2E6" stroke-width="1"/>
+<text x="327.4" y="96.0" font-size="11" fill="#212529" font-weight="700" text-anchor="middle" letter-spacing="0.3">ACTIVE</text>
+<text x="375.9" y="96.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">Vehicle ID 3f2a9c1e-77b4-4d0e-9a51-1c0d2b6f8e21  ⧉</text>
+<rect x="1096.0" y="74.0" width="120.0" height="36.0" rx="6" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<text x="1156.0" y="96.7" font-size="13" fill="#212529" font-weight="600" text-anchor="middle">Show on map</text>
+<rect x="960.0" y="74.0" width="128.0" height="36.0" rx="6" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<text x="1024.0" y="96.7" font-size="13" fill="#212529" font-weight="600" text-anchor="middle">Revenue trend</text>
+<rect x="240.0" y="124.0" width="232.0" height="96.0" rx="8" fill="#FFFFFF" stroke="#CED4DA" stroke-width="1"/>
+<text x="256.0" y="150.0" font-size="12" fill="#6C757D" font-weight="600" text-anchor="start">Lifetime trips</text>
+<text x="256.0" y="182.0" font-size="24" fill="#212529" font-weight="700" text-anchor="start">124</text>
+<text x="256.0" y="205.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">completed · as of 09:05</text>
+<rect x="488.0" y="124.0" width="232.0" height="96.0" rx="8" fill="#FFFFFF" stroke="#CED4DA" stroke-width="1"/>
+<text x="504.0" y="150.0" font-size="12" fill="#6C757D" font-weight="600" text-anchor="start">Total earnings</text>
+<text x="504.0" y="182.0" font-size="24" fill="#212529" font-weight="700" text-anchor="start">$16,801.83</text>
+<text x="504.0" y="205.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">rank #1 of 500</text>
+<rect x="736.0" y="124.0" width="232.0" height="96.0" rx="8" fill="#FFFFFF" stroke="#CED4DA" stroke-width="1"/>
+<text x="752.0" y="150.0" font-size="12" fill="#6C757D" font-weight="600" text-anchor="start">Average rating</text>
+<text x="752.0" y="182.0" font-size="24" fill="#212529" font-weight="700" text-anchor="start">4.12 ★</text>
+<text x="752.0" y="205.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">48 reviews</text>
+<rect x="984.0" y="124.0" width="232.0" height="96.0" rx="8" fill="#FFFFFF" stroke="#CED4DA" stroke-width="1"/>
+<text x="1000.0" y="150.0" font-size="12" fill="#6C757D" font-weight="600" text-anchor="start">Last inspection</text>
+<text x="1000.0" y="182.0" font-size="24" fill="#212529" font-weight="700" text-anchor="start">Passed</text>
+<text x="1000.0" y="205.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">12 Aug 2026</text>
+<rect x="240.0" y="236.0" width="600.0" height="304.0" rx="8" fill="#FFFFFF" stroke="#CED4DA" stroke-width="1"/>
+<text x="256.0" y="264.0" font-size="15" fill="#212529" font-weight="700" text-anchor="start">Catalog</text>
+<text x="256.0" y="283.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">VehicleMetadata · MongoDB document</text>
+<text x="256.0" y="308.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.6">FEATURES</text>
+<rect x="256.0" y="318.0" width="74.4" height="28.0" rx="14.0" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<text x="293.2" y="336.3" font-size="12" fill="#212529" font-weight="600" text-anchor="middle">Sunroof</text>
+<rect x="338.4" y="318.0" width="60.0" height="28.0" rx="14.0" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<text x="368.4" y="336.3" font-size="12" fill="#212529" font-weight="600" text-anchor="middle">Wi-Fi</text>
+<rect x="406.4" y="318.0" width="96.0" height="28.0" rx="14.0" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<text x="454.4" y="336.3" font-size="12" fill="#212529" font-weight="600" text-anchor="middle">Child seat</text>
+<text x="256.0" y="378.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.6">INSPECTION RECORDS (3)</text>
+<rect x="256.0" y="388.0" width="568.0" height="126.0" rx="8" fill="#FFFFFF" stroke="#CED4DA" stroke-width="1"/>
+<rect x="256.5" y="388.5" width="567.0" height="29.5" rx="7.5" fill="#F1F3F5" stroke="none" stroke-width="1"/>
+<rect x="256.5" y="403.0" width="567.0" height="15.0" rx="0" fill="#F1F3F5" stroke="none" stroke-width="1"/>
+<text x="268.0" y="407.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.4">DATE</text>
+<text x="438.0" y="407.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.4">RESULT</text>
+<text x="568.0" y="407.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.4">INSPECTOR</text>
+<line x1="256.0" y1="418.0" x2="824.0" y2="418.0" stroke="#CED4DA" stroke-width="1" stroke-linecap="round"/>
+<text x="268.0" y="438.5" font-size="13" fill="#212529" font-weight="400" text-anchor="start">12 Aug 2026</text>
+<rect x="438.0" y="424.0" width="62.9" height="20.0" rx="10.0" fill="#DEE2E6" stroke="#DEE2E6" stroke-width="1"/>
+<text x="469.4" y="438.0" font-size="11" fill="#212529" font-weight="700" text-anchor="middle" letter-spacing="0.3">PASSED</text>
+<text x="568.0" y="438.5" font-size="13" fill="#212529" font-weight="400" text-anchor="start">Allison Hill</text>
+<line x1="256.0" y1="450.0" x2="824.0" y2="450.0" stroke="#CED4DA" stroke-width="1" stroke-linecap="round"/>
+<text x="268.0" y="470.5" font-size="13" fill="#212529" font-weight="400" text-anchor="start">03 Mar 2026</text>
+<rect x="438.0" y="456.0" width="62.9" height="20.0" rx="10.0" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<text x="469.4" y="470.0" font-size="11" fill="#212529" font-weight="700" text-anchor="middle" letter-spacing="0.3">FAILED</text>
+<text x="568.0" y="470.5" font-size="13" fill="#212529" font-weight="400" text-anchor="start">Brian Yang</text>
+<line x1="256.0" y1="482.0" x2="824.0" y2="482.0" stroke="#CED4DA" stroke-width="1" stroke-linecap="round"/>
+<text x="268.0" y="502.5" font-size="13" fill="#212529" font-weight="400" text-anchor="start">21 Nov 2025</text>
+<rect x="438.0" y="488.0" width="62.9" height="20.0" rx="10.0" fill="#DEE2E6" stroke="#DEE2E6" stroke-width="1"/>
+<text x="469.4" y="502.0" font-size="11" fill="#212529" font-weight="700" text-anchor="middle" letter-spacing="0.3">PASSED</text>
+<text x="568.0" y="502.5" font-size="13" fill="#212529" font-weight="400" text-anchor="start">Dana Ortiz</text>
+<text x="256.0" y="528.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-style="italic">Other attributes: none. Unknown fields are listed here as key → value.</text>
+<rect x="856.0" y="236.0" width="360.0" height="304.0" rx="8" fill="#FFFFFF" stroke="#CED4DA" stroke-width="1"/>
+<text x="872.0" y="264.0" font-size="15" fill="#212529" font-weight="700" text-anchor="start">Reviews</text>
+<text x="872.0" y="283.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">TripReviews · this vehicle</text>
+<text x="1200.0" y="264.0" font-size="12" fill="#212529" font-weight="600" text-anchor="end">Open in Reviews ›</text>
+<text x="872.0" y="324.0" font-size="34" fill="#212529" font-weight="800" text-anchor="start">4.12</text>
+<text x="960.0" y="314.0" font-size="16" fill="#212529" font-weight="400" text-anchor="start" letter-spacing="1">★★★★☆</text>
+<text x="960.0" y="332.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">48 reviews</text>
+<text x="872.0" y="361.0" font-size="12" fill="#212529" font-weight="400" text-anchor="start">5 ★</text>
+<rect x="912.0" y="352.0" width="248.0" height="11.0" rx="3" fill="#ADB5BD" stroke="none" stroke-width="1"/>
+<text x="1168.0" y="361.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">22</text>
+<text x="872.0" y="381.0" font-size="12" fill="#212529" font-weight="400" text-anchor="start">4 ★</text>
+<rect x="912.0" y="372.0" width="169.1" height="11.0" rx="3" fill="#ADB5BD" stroke="none" stroke-width="1"/>
+<text x="1089.1" y="381.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">15</text>
+<text x="872.0" y="401.0" font-size="12" fill="#212529" font-weight="400" text-anchor="start">3 ★</text>
+<rect x="912.0" y="392.0" width="78.9" height="11.0" rx="3" fill="#ADB5BD" stroke="none" stroke-width="1"/>
+<text x="998.9" y="401.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">7</text>
+<text x="872.0" y="421.0" font-size="12" fill="#212529" font-weight="400" text-anchor="start">2 ★</text>
+<rect x="912.0" y="412.0" width="33.8" height="11.0" rx="3" fill="#ADB5BD" stroke="none" stroke-width="1"/>
+<text x="953.8" y="421.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">3</text>
+<text x="872.0" y="441.0" font-size="12" fill="#212529" font-weight="400" text-anchor="start">1 ★</text>
+<rect x="912.0" y="432.0" width="11.3" height="11.0" rx="3" fill="#ADB5BD" stroke="none" stroke-width="1"/>
+<text x="931.3" y="441.0" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start">1</text>
+<text x="872.0" y="480.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.6">TOP TAGS</text>
+<rect x="872.0" y="490.0" width="90.0" height="26.0" rx="13.0" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<text x="917.0" y="507.0" font-size="11" fill="#212529" font-weight="600" text-anchor="middle">On Time 19</text>
+<rect x="970.0" y="490.0" width="103.2" height="26.0" rx="13.0" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<text x="1021.6" y="507.0" font-size="11" fill="#212529" font-weight="600" text-anchor="middle">Clean Car 17</text>
+<rect x="1081.2" y="490.0" width="70.2" height="26.0" rx="13.0" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<text x="1116.3" y="507.0" font-size="11" fill="#212529" font-weight="600" text-anchor="middle">Safe 15</text>
+<rect x="240.0" y="556.0" width="976.0" height="262.0" rx="8" fill="#FFFFFF" stroke="#CED4DA" stroke-width="1"/>
+<text x="256.0" y="584.0" font-size="15" fill="#212529" font-weight="700" text-anchor="start">Recent trips</text>
+<text x="1200.0" y="584.0" font-size="12" fill="#212529" font-weight="600" text-anchor="end">View all trips ›</text>
+<rect x="256.0" y="598.0" width="944.0" height="202.0" rx="8" fill="#FFFFFF" stroke="#CED4DA" stroke-width="1"/>
+<rect x="256.5" y="598.5" width="943.0" height="31.5" rx="7.5" fill="#F1F3F5" stroke="none" stroke-width="1"/>
+<rect x="256.5" y="614.0" width="943.0" height="16.0" rx="0" fill="#F1F3F5" stroke="none" stroke-width="1"/>
+<text x="268.0" y="618.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.4">CREATED</text>
+<text x="458.0" y="618.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.4">RIDER</text>
+<text x="824.0" y="618.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="end" letter-spacing="0.4">FARE</text>
+<text x="848.0" y="618.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.4">STATUS</text>
+<text x="1008.0" y="618.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.4">TRIP</text>
+<text x="1180.0" y="618.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="middle" letter-spacing="0.4"></text>
+<line x1="256.0" y1="630.0" x2="1200.0" y2="630.0" stroke="#CED4DA" stroke-width="1" stroke-linecap="round"/>
+<text x="268.0" y="651.5" font-size="13" fill="#6C757D" font-weight="400" text-anchor="start">09 Oct 2026, 09:12</text>
+<text x="458.0" y="651.5" font-size="13" fill="#212529" font-weight="400" text-anchor="start">Heather Brown</text>
+<text x="824.0" y="651.5" font-size="13" fill="#212529" font-weight="400" text-anchor="end">$24.50</text>
+<rect x="848.0" y="637.0" width="85.3" height="20.0" rx="10.0" fill="#FFFFFF" stroke="#868E96" stroke-width="1"/>
+<text x="890.7" y="651.0" font-size="11" fill="#212529" font-weight="700" text-anchor="middle" letter-spacing="0.3">REQUESTED</text>
+<text x="1008.0" y="651.5" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">f35d765d…</text>
+<text x="1180.0" y="652.5" font-size="18" fill="#6C757D" font-weight="400" text-anchor="middle">›</text>
+<line x1="256.0" y1="664.0" x2="1200.0" y2="664.0" stroke="#CED4DA" stroke-width="1" stroke-linecap="round"/>
+<text x="268.0" y="685.5" font-size="13" fill="#6C757D" font-weight="400" text-anchor="start">08 Oct 2026, 18:40</text>
+<text x="458.0" y="685.5" font-size="13" fill="#212529" font-weight="400" text-anchor="start">Jose Allen</text>
+<text x="824.0" y="685.5" font-size="13" fill="#212529" font-weight="400" text-anchor="end">$49.95</text>
+<rect x="848.0" y="671.0" width="85.3" height="20.0" rx="10.0" fill="#343A40" stroke="#343A40" stroke-width="1"/>
+<text x="890.7" y="685.0" font-size="11" fill="#FFFFFF" font-weight="700" text-anchor="middle" letter-spacing="0.3">COMPLETED</text>
+<text x="1008.0" y="685.5" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">8b1c22e0…</text>
+<text x="1180.0" y="686.5" font-size="18" fill="#6C757D" font-weight="400" text-anchor="middle">›</text>
+<line x1="256.0" y1="698.0" x2="1200.0" y2="698.0" stroke="#CED4DA" stroke-width="1" stroke-linecap="round"/>
+<text x="268.0" y="719.5" font-size="13" fill="#6C757D" font-weight="400" text-anchor="start">07 Oct 2026, 12:03</text>
+<text x="458.0" y="719.5" font-size="13" fill="#212529" font-weight="400" text-anchor="start">Denise Jones</text>
+<text x="824.0" y="719.5" font-size="13" fill="#212529" font-weight="400" text-anchor="end">$118.20</text>
+<rect x="848.0" y="705.0" width="85.3" height="20.0" rx="10.0" fill="#343A40" stroke="#343A40" stroke-width="1"/>
+<text x="890.7" y="719.0" font-size="11" fill="#FFFFFF" font-weight="700" text-anchor="middle" letter-spacing="0.3">COMPLETED</text>
+<text x="1008.0" y="719.5" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">41aa09f3…</text>
+<text x="1180.0" y="720.5" font-size="18" fill="#6C757D" font-weight="400" text-anchor="middle">›</text>
+<line x1="256.0" y1="732.0" x2="1200.0" y2="732.0" stroke="#CED4DA" stroke-width="1" stroke-linecap="round"/>
+<text x="268.0" y="753.5" font-size="13" fill="#6C757D" font-weight="400" text-anchor="start">07 Oct 2026, 08:55</text>
+<text x="458.0" y="753.5" font-size="13" fill="#212529" font-weight="400" text-anchor="start">Scott Alexander</text>
+<text x="824.0" y="753.5" font-size="13" fill="#212529" font-weight="400" text-anchor="end">$177.53</text>
+<rect x="848.0" y="739.0" width="85.3" height="20.0" rx="10.0" fill="#343A40" stroke="#343A40" stroke-width="1"/>
+<text x="890.7" y="753.0" font-size="11" fill="#FFFFFF" font-weight="700" text-anchor="middle" letter-spacing="0.3">COMPLETED</text>
+<text x="1008.0" y="753.5" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">c9d0e1f2…</text>
+<text x="1180.0" y="754.5" font-size="18" fill="#6C757D" font-weight="400" text-anchor="middle">›</text>
+<line x1="256.0" y1="766.0" x2="1200.0" y2="766.0" stroke="#CED4DA" stroke-width="1" stroke-linecap="round"/>
+<text x="268.0" y="787.5" font-size="13" fill="#6C757D" font-weight="400" text-anchor="start">04 Oct 2026, 21:17</text>
+<text x="458.0" y="787.5" font-size="13" fill="#212529" font-weight="400" text-anchor="start">Susan Serrano</text>
+<text x="824.0" y="787.5" font-size="13" fill="#212529" font-weight="400" text-anchor="end">$159.47</text>
+<rect x="848.0" y="773.0" width="85.3" height="20.0" rx="10.0" fill="#343A40" stroke="#343A40" stroke-width="1"/>
+<text x="890.7" y="787.0" font-size="11" fill="#FFFFFF" font-weight="700" text-anchor="middle" letter-spacing="0.3">COMPLETED</text>
+<text x="1008.0" y="787.5" font-size="12" fill="#6C757D" font-weight="400" text-anchor="start" font-family="'JetBrains Mono', Menlo, Consolas, monospace">77e6d5c4…</text>
+<text x="1180.0" y="788.5" font-size="18" fill="#6C757D" font-weight="400" text-anchor="middle">›</text>
+<circle cx="464.0" cy="124.0" r="11" fill="#E8590C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="464.0" y="128.3" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">1</text>
+<circle cx="830.0" cy="236.0" r="11" fill="#E8590C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="830.0" y="240.3" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">2</text>
+<circle cx="840.0" cy="400.0" r="11" fill="#E8590C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="840.0" y="404.3" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">3</text>
+<circle cx="1206.0" cy="236.0" r="11" fill="#E8590C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1206.0" y="240.3" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">4</text>
+<circle cx="1206.0" cy="556.0" r="11" fill="#E8590C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1206.0" y="560.3" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">5</text>
+<circle cx="960.0" cy="72.0" r="11" fill="#E8590C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="960.0" y="76.3" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">6</text>
+</g>
+<text x="1288.0" y="74.0" font-size="11" fill="#6C757D" font-weight="700" text-anchor="start" letter-spacing="0.8">ANNOTATIONS</text>
+<rect x="1288.0" y="84.0" width="328.0" height="137.0" rx="8" fill="#FFF9DB" stroke="#FAB005" stroke-width="1"/>
+<circle cx="1308.0" cy="105.0" r="11" fill="#E8590C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1308.0" y="109.3" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">1</text>
+<text x="1326.0" y="110.0" font-size="13" fill="#212529" font-weight="700" text-anchor="start">Postgres + MongoDB on one page</text>
+<text x="1302.0" y="132.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">The header and KPIs come from vehicles +</text>
+<text x="1302.0" y="149.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">vehicle_lifetime_stats (materialized view, so</text>
+<text x="1302.0" y="166.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">they show an &#x27;as of&#x27; time). Catalog and</text>
+<text x="1302.0" y="183.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">reviews come from MongoDB. Each card fetches</text>
+<text x="1302.0" y="200.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">on its own.</text>
+<rect x="1288.0" y="231.0" width="328.0" height="154.0" rx="8" fill="#FFF9DB" stroke="#FAB005" stroke-width="1"/>
+<circle cx="1308.0" cy="252.0" r="11" fill="#E8590C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1308.0" y="256.3" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">2</text>
+<text x="1326.0" y="257.0" font-size="13" fill="#212529" font-weight="700" text-anchor="start">Flexible catalog document</text>
+<text x="1302.0" y="279.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">VehicleMetadata is rendered generically:</text>
+<text x="1302.0" y="296.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">string arrays become chips, object arrays</text>
+<text x="1302.0" y="313.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">become a small table, dates are formatted, and</text>
+<text x="1302.0" y="330.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">unknown keys are listed under &#x27;Other</text>
+<text x="1302.0" y="347.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">attributes&#x27;, so new fields never break the</text>
+<text x="1302.0" y="364.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">page.</text>
+<rect x="1288.0" y="395.0" width="328.0" height="86.0" rx="8" fill="#FFF9DB" stroke="#FAB005" stroke-width="1"/>
+<circle cx="1308.0" cy="416.0" r="11" fill="#E8590C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1308.0" y="420.3" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">3</text>
+<text x="1326.0" y="421.0" font-size="13" fill="#212529" font-weight="700" text-anchor="start">Inspection history</text>
+<text x="1302.0" y="443.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">Newest first. Passed and Failed are labelled</text>
+<text x="1302.0" y="460.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">badges, not just colours.</text>
+<rect x="1288.0" y="491.0" width="328.0" height="103.0" rx="8" fill="#FFF9DB" stroke="#FAB005" stroke-width="1"/>
+<circle cx="1308.0" cy="512.0" r="11" fill="#E8590C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1308.0" y="516.3" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">4</text>
+<text x="1326.0" y="517.0" font-size="13" fill="#212529" font-weight="700" text-anchor="start">Review summary</text>
+<text x="1302.0" y="539.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">The same $facet as the Reviews screen,</text>
+<text x="1302.0" y="556.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">filtered to this vehicle_id (needs the planned</text>
+<text x="1302.0" y="573.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">index).</text>
+<rect x="1288.0" y="604.0" width="328.0" height="103.0" rx="8" fill="#FFF9DB" stroke="#FAB005" stroke-width="1"/>
+<circle cx="1308.0" cy="625.0" r="11" fill="#E8590C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1308.0" y="629.3" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">5</text>
+<text x="1326.0" y="630.0" font-size="13" fill="#212529" font-weight="700" text-anchor="start">Recent trips</text>
+<text x="1302.0" y="652.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">GET /api/trips?vehicle_id=…&amp;page_size=5. &#x27;View</text>
+<text x="1302.0" y="669.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">all trips&#x27; opens Trips with this filter</text>
+<text x="1302.0" y="686.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">applied.</text>
+<rect x="1288.0" y="717.0" width="328.0" height="103.0" rx="8" fill="#FFF9DB" stroke="#FAB005" stroke-width="1"/>
+<circle cx="1308.0" cy="738.0" r="11" fill="#E8590C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1308.0" y="742.3" font-size="12" fill="#FFFFFF" font-weight="700" text-anchor="middle">6</text>
+<text x="1326.0" y="743.0" font-size="13" fill="#212529" font-weight="700" text-anchor="start">Shortcuts</text>
+<text x="1302.0" y="765.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">Revenue trend opens Overview with this vehicle</text>
+<text x="1302.0" y="782.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">selected. Show on map opens Live map centred</text>
+<text x="1302.0" y="799.0" font-size="12" fill="#495057" font-weight="400" text-anchor="start">on its latest ping.</text>
+</svg>

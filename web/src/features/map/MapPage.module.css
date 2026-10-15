@@ -1,0 +1,163 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rs-space-4);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--rs-space-3);
+}
+
+.label {
+  font-size: var(--rs-text-xs);
+  font-weight: 600;
+  color: var(--rs-color-text-muted);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.hint {
+  font-size: var(--rs-text-xs);
+  color: var(--rs-color-text-muted);
+}
+
+.live {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--rs-space-2);
+  margin-left: auto;
+  font-size: var(--rs-text-sm);
+  font-weight: 600;
+}
+
+.liveDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--rs-color-success);
+  box-shadow: 0 0 0 0 var(--rs-color-success);
+  animation: pulse 2s ease-out infinite;
+}
+
+.liveDotPaused {
+  background: var(--rs-color-text-faint);
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(21, 128, 61, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 8px rgba(21, 128, 61, 0);
+  }
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(300px, 2fr);
+  gap: var(--rs-space-4);
+  align-items: stretch;
+}
+
+.mapBox {
+  min-height: 560px;
+  display: flex;
+}
+
+.mapBox > * {
+  flex: 1;
+}
+
+.listCard {
+  max-height: 640px;
+  overflow: hidden;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: var(--rs-space-3);
+  padding: 10px 6px;
+  border-bottom: 1px solid var(--rs-color-border);
+  border-radius: var(--rs-radius-sm);
+}
+
+.row:last-child {
+  border-bottom: 0;
+}
+
+.rowActive {
+  background: var(--rs-color-primary-soft);
+}
+
+.rank {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--rs-chart-series-1);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.rowMain {
+  min-width: 0;
+}
+
+.plate {
+  display: flex;
+  align-items: center;
+  gap: var(--rs-space-2);
+  font-weight: 700;
+}
+
+.rowMeta {
+  font-size: var(--rs-text-xs);
+  color: var(--rs-color-text-muted);
+}
+
+.distance {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Map and list side by side only when the list has room for one-line rows. */
+@media (max-width: 1279px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .mapBox {
+    min-height: 380px;
+  }
+
+  .listCard {
+    max-height: none;
+  }
+
+  .live {
+    margin-left: 0;
+  }
+}

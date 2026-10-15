@@ -1,0 +1,30 @@
+.group {
+  display: inline-flex;
+  padding: 3px;
+  gap: 2px;
+  background: var(--rs-color-surface);
+  border: 1px solid var(--rs-color-border-strong);
+  border-radius: var(--rs-radius-sm);
+}
+
+.segment {
+  min-height: 28px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  font-size: var(--rs-text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.segment:hover {
+  background: var(--rs-color-surface-muted);
+}
+
+.selected,
+.selected:hover {
+  background: var(--rs-color-primary);
+  color: var(--rs-color-on-primary);
+}

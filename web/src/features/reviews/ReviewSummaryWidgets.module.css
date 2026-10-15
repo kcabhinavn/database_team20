@@ -1,0 +1,11 @@
+.average {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hero {
+  font-size: var(--rs-text-3xl);
+  font-weight: 800;
+  line-height: 1;
+}

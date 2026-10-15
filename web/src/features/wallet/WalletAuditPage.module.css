@@ -1,0 +1,9 @@
+.ok {
+  color: var(--rs-color-success);
+  font-weight: 700;
+}
+
+.bad {
+  color: var(--rs-color-danger);
+  font-weight: 700;
+}

@@ -17,7 +17,7 @@ from psycopg2.extras import execute_values
 
 DB_CONFIG = {
     "host": os.getenv("PGHOST", "localhost"),
-    "port": int(os.getenv("PGPORT", "5432")),
+    "port": int(os.getenv("PGPORT", "5433")),  # [A2] docker-compose publishes Postgres on 5433
     "dbname": os.getenv("PGDATABASE", "ridesync"),
     "user": os.getenv("PGUSER", "ridesync"),
     "password": os.getenv("PGPASSWORD", "ridesync"),
@@ -29,6 +29,10 @@ NUM_TRIPS = 50_000
 NUM_WALLET_UPDATES = 100_500
 BATCH_SIZE = 5_000
 SEED = 42
+# [A2 fix] Was 0.12 per trip. With ~50 trips per rider that left 999/1000
+# riders with an open trip, so almost every booking hit idx_active_rider_trip.
+# 0.01 leaves roughly 60% of riders free to book (1 - 0.99**50 ~= 0.40 active).
+ACTIVE_TRIP_PROBABILITY = 0.01
 
 VEHICLE_CLASSES = ["ECONOMY", "PREMIUM", "XL", "POOL"]
 
@@ -97,7 +101,7 @@ def seed_trips(conn, rider_ids: list, vehicle_ids: list) -> None:
     with conn.cursor() as cur:
         for _ in range(NUM_TRIPS):
             rider_id = random.choice(rider_ids)
-            if rider_id not in active_riders and random.random() < 0.12:
+            if rider_id not in active_riders and random.random() < ACTIVE_TRIP_PROBABILITY:
                 status = random.choice(["REQUESTED", "IN_TRANSIT"])
                 active_riders.add(rider_id)
             else:
@@ -190,6 +194,51 @@ def seed_wallet_audit_logs_via_trigger(conn, rider_ids: list) -> None:
     print(f"  Done. {applied} wallet updates applied.")
 
 
+def spread_audit_history(conn) -> None:
+    """
+    [A2 fix] The trigger stamps every audit row with NOW(), so the whole seeded
+    history landed inside about one minute and a date filter had nothing to
+    filter (handover note #7). Each seeding transaction (the rider INSERT and
+    every UPDATE round) touched a rider at most once, so mapping transaction k
+    to its own slice of the last 90 days keeps every rider's order intact.
+
+    wallet_audit_logs is append-only, so the immutability trigger is disabled
+    for this one statement only, inside a transaction (ALTER TABLE is
+    transactional and needs table ownership). Application code never does this.
+    """
+    print("Spreading audit history over the last 90 days...")
+    with conn.cursor() as cur:
+        cur.execute("ALTER TABLE wallet_audit_logs DISABLE TRIGGER trg_wallet_audit_logs_immutable")
+        cur.execute(
+            """
+            WITH batches AS (
+                SELECT ts,
+                       ROW_NUMBER() OVER (ORDER BY ts) - 1 AS k,
+                       COUNT(*) OVER ()                    AS n
+                FROM (SELECT DISTINCT "timestamp" AS ts FROM wallet_audit_logs) d
+            )
+            UPDATE wallet_audit_logs w
+               SET "timestamp" = NOW() - INTERVAL '90 days'
+                               + INTERVAL '89 days' * (b.k::float8 / b.n)
+                               + INTERVAL '89 days' * (0.9 * random() / b.n)
+              FROM batches b
+             WHERE w."timestamp" = b.ts
+            """
+        )
+        moved = cur.rowcount
+        cur.execute("ALTER TABLE wallet_audit_logs ENABLE TRIGGER trg_wallet_audit_logs_immutable")
+    conn.commit()
+    print(f"  Done. {moved} audit rows re-dated.")
+
+
+def refresh_materialized_view(conn) -> None:
+    """[A2] Refresh once so the summary (and its refresh log) is ready."""
+    with conn.cursor() as cur:
+        cur.execute("SELECT refresh_vehicle_lifetime_stats()")
+    conn.commit()
+    print("Refreshed materialized view vehicle_lifetime_stats.")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Seed RideSync PostgreSQL data.")
     parser.add_argument(
@@ -207,6 +256,8 @@ def main() -> None:
         vehicle_ids = seed_vehicles(conn)
         seed_trips(conn, rider_ids, vehicle_ids)
         seed_wallet_audit_logs_via_trigger(conn, rider_ids)
+        spread_audit_history(conn)
+        refresh_materialized_view(conn)
 
         with conn.cursor() as cur:
             cur.execute("SELECT COUNT(*) FROM riders")
@@ -217,7 +268,6 @@ def main() -> None:
             print(f"trips: {cur.fetchone()[0]}")
             cur.execute("SELECT COUNT(*) FROM wallet_audit_logs")
             print(f"wallet_audit_logs: {cur.fetchone()[0]}")
-        print("Refresh the materialized view after this: SELECT refresh_vehicle_lifetime_stats();")
     finally:
         conn.close()
 
