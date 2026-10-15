@@ -1,0 +1,108 @@
+# RideSync (Assignment 2, Team 20): the whole system.
+#
+#   docker compose up -d --build                      # databases + API + web
+#   docker compose --profile seed run --rm seed       # load the Part A data (about 1 min)
+#   open http://localhost:8080                        # the app (API docs: http://localhost:8000/docs)
+#
+# On first start (empty volumes) Postgres runs sql/01..05 + 07 and Mongo runs
+# mongo/01 + 04 automatically. Start again from empty with: docker compose down -v
+#
+# Host ports can be changed with PG_HOST_PORT, MONGO_HOST_PORT, API_PORT, WEB_PORT.
+# Postgres is published on 5433 because many machines already run Postgres on 5432.
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: team20-postgres
+    environment:
+      POSTGRES_USER: ridesync
+      POSTGRES_PASSWORD: ridesync
+      POSTGRES_DB: ridesync
+    ports:
+      - "${PG_HOST_PORT:-5433}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./sql/01_schema_ddl.sql:/docker-entrypoint-initdb.d/01_schema_ddl.sql:ro
+      - ./sql/02_indexes.sql:/docker-entrypoint-initdb.d/02_indexes.sql:ro
+      - ./sql/03_triggers_and_audit.sql:/docker-entrypoint-initdb.d/03_triggers_and_audit.sql:ro
+      - ./sql/04_stored_procedures.sql:/docker-entrypoint-initdb.d/04_stored_procedures.sql:ro
+      - ./sql/05_materialized_views.sql:/docker-entrypoint-initdb.d/05_materialized_views.sql:ro
+      - ./sql/07_a2_frontend_support.sql:/docker-entrypoint-initdb.d/07_a2_frontend_support.sql:ro
+    healthcheck:
+      # TCP check: the temporary server used while init scripts run only
+      # listens on the unix socket, so this passes once init has finished.
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U ridesync -d ridesync"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  mongo:
+    # mongo:7 rather than 8: MongoDB 8.0.x refuses to start on Linux kernel
+    # >= 6.19 (SERVER-121912). 7.0 runs fine and matches the Part A README.
+    image: mongo:7
+    container_name: team20-mongo
+    ports:
+      - "${MONGO_HOST_PORT:-27017}:27017"
+    volumes:
+      - mongodata:/data/db
+      - ./mongo/01_collections_and_indexes.js:/docker-entrypoint-initdb.d/01_collections_and_indexes.js:ro
+      - ./mongo/04_a2_indexes_and_validators.js:/docker-entrypoint-initdb.d/04_a2_indexes_and_validators.js:ro
+    healthcheck:
+      # Use the container IP: the temporary mongod used while init scripts run
+      # binds 127.0.0.1 only, so this passes once init has finished.
+      test: ["CMD-SHELL", "mongosh --quiet --host \"$$(hostname -i)\" --eval 'db.adminCommand(\"ping\").ok' | grep -q 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build: ./api
+    container_name: team20-api
+    environment:
+      PGHOST: postgres
+      PGPORT: "5432"
+      PGDATABASE: ridesync
+      PGUSER: ridesync
+      PGPASSWORD: ridesync
+      MONGO_URI: mongodb://mongo:27017
+      MONGO_DB: ridesync
+      CORS_ORIGINS: http://localhost:5173,http://localhost:8080
+    ports:
+      - "${API_PORT:-8000}:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      mongo:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ./web
+      target: serve
+    container_name: team20-web
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    depends_on:
+      api:
+        condition: service_healthy
+
+  # Not started by `up`; run it on demand (see the top of this file).
+  seed:
+    build: ./data_generation
+    profiles: ["seed"]
+    environment:
+      PGHOST: postgres
+      PGPORT: "5432"
+      PGDATABASE: ridesync
+      PGUSER: ridesync
+      PGPASSWORD: ridesync
+      MONGO_URI: mongodb://mongo:27017
+    depends_on:
+      postgres:
+        condition: service_healthy
+      mongo:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+  mongodata:
