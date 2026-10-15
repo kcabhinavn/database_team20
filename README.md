@@ -9,8 +9,8 @@ MongoDB, a FastAPI layer and a React app. It covers the four Part A workflows pl
 | Course | CS6.302 Software System Development, Assignment 2 |
 | Team | 20 |
 | Repository | https://github.com/kcabhinavn/database_team20 |
-| Final commit | `TODO: paste the hash of the final commit` |
-| Demo video (≤ 5 min) | `TODO: link` |
+| Final commit | `07cc7a5f3cd979e980380fea3f5d81aa147ffaf5` |
+| Demo video (≤ 5 min) | `https://drive.google.com/file/d/15FBAAcFLL70ccNErFyOcmOaXGLCPf-OS/view?usp=sharing` |
 
 **Documents:**
 - [Handover note](docs/handover_note.md): what we inherited, what was broken, and what we changed.
