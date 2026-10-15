@@ -253,15 +253,10 @@ The handover note has the full list with reasons. In short:
 
 | Member | Roll number | Contribution |
 |---|---|---|
-| TODO | TODO | TODO |
-| TODO | TODO | TODO |
-| TODO | TODO | TODO |
-| TODO | TODO | TODO |
-
-## Submitting
-
-After the final commit, fill in the commit hash and the demo-video link above. Then build the ZIP from git (it must be
-under 20 MB). This automatically leaves out `node_modules/`, `.venv/`, `__pycache__/`, `dist/` and the databases:
+| Supriyo Ain | 2026202012 | /web |
+| KC Abhinav | 2026201007 | /api/app |
+| Chandu Nukala | 2026201002 | /api/tests |
+| Gadddam Hemanth Reddy | 2026201018 | Api Design and README.md Contribution |
 
 ```bash
 git archive --format=zip -o 20_a1b.zip HEAD
